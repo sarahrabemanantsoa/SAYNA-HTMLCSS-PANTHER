@@ -1,0 +1,371 @@
+/* Styles pour la page en égnéral */
+*{
+    list-style: none;
+    color: white;
+    /* background-color: black; */
+}
+/* Styles fade-in de tous les éléments de la page */
+*{
+    animation: slide-from-left 2s ease-in-out ;
+}
+@keyframes slide-from-left{
+    from{
+        transform: translateX(-50px);
+        opacity: 5%;
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+/* Arrière plan de la partie body */
+body{
+    background-image: url('/Images/All pages/arrière_plan.png');
+    background-size: 100%;
+}
+
+/* Styles de la partie scroll */
+/* Styles scroll en général */
+.scroll{
+    display: flex;
+    gap: 20px;    
+    position: fixed;
+    top: 0;
+    left: 0.5%;
+}
+/* Ligne 1 dans scroll */
+.ligne1{
+    background-color: #9E91B7;
+    width: 8px;
+    height: 760px;
+}
+/* Ligne 2 dans scroll */
+.ligne{
+    background-color: #9E91B7;
+    width: 8px;
+    height: 500px;
+    margin-left: 19px;
+}
+/* Réseaux sociaux dans scroll */
+.reseausociaux div img{
+    width: 40px;
+    margin: 10px 0; 
+}
+
+/* Styles de la partie navigation */
+/* Styles navigation en général */
+.navigation{
+    width: 100vw;
+    margin: 2%;
+    text-align: center;
+    display: flex;
+    column-gap: 55%;
+}
+/* Styles des logos (Sayna et Marvel) dans navigations */
+.logo{
+    margin-left: 7%;
+}
+/* Styles des liens sous formes de texte dans navigations */
+nav ul{
+    display: flex;
+    column-gap: 25%;
+}
+nav ul a{
+    text-decoration: none;
+    font-family: 'Titre H2';
+    font-size: 32px;
+}
+
+nav ul a:hover{
+    text-decoration: underline;
+    color: #3D2DA6;
+}
+
+/* Styles dans main */
+/* Styles pour voir_plus1 */
+.voir_plus1{
+    width: auto;
+    height: 875px;
+    background-image: url('/Images/Accueil/Pantherhome1..png');
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
+    background-size: contain;
+    margin-left: 4%; 
+}
+
+.bloc_panther{
+    width: 28vw;
+    height: auto;
+    padding: 10% 20% 10% 5% ;
+}
+/* Styles pour voir_plus2 */
+.voir_plus2{
+    width: 94vw;
+    height: 341px;
+    background-color: #021740;
+    display: flex;
+    margin-left: 5%;
+}
+.killmonger{
+    padding-left: 2.5%; 
+    position: relative;
+    top: -15%;
+     
+ }
+
+.okoye{
+    display: flex;
+    column-gap: 10%;
+    width: 80vw;
+    margin-left: 5%;
+    background-image: url('/Images/Accueil/Pantherhome4.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/* Style de la partie Paragraphe */
+.description{
+    display: flex;
+    column-gap: 20%;
+    margin: 7%;
+}
+
+.paragraphe{
+    width: 39%;
+}
+
+.tchalla img{
+    position: absolute;
+    left: 15%;
+    top: -30%;
+}
+
+.biographie{
+    width: 25%;
+    height: max-content;
+    background-color: #FFFFFF;
+    margin-top: 10%;
+    text-align: center;
+    border-radius: 3%;
+    position: relative; 
+    
+}
+
+.cadre_textuel h3{
+    color: #0B0B0B;
+    margin-top: 60%;
+}
+
+.cadre_textuel .bouton1 button{
+    justify-content: center;
+    column-gap: 9%;
+    padding: 15px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 10%;
+    background-color: #3D2DA6;  
+}
+
+.cadre_textuel p{
+    color: #0B0B0B;
+}
+
+.cadre_textuel span{
+    font-weight: bold;
+    color: black;
+}
+
+.text{
+    padding-left: 15%;
+}
+
+/* Styles pour la section contacts */
+.contacts{
+    height: 1077px;
+    background-image:url('/Images/Accueil/Pantherhome7.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-bottom: 8%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.cadre{
+    width: 35vw;
+    height: 53vh;
+    border: none;
+    border-radius: 200px;
+    background: linear-gradient(to top,#9E91B7,#9E91B7, #FFFFFF, #FFFFFF);
+    opacity: 75%;
+    text-align: center;
+    margin-top: 300px;
+
+}
+
+.contacts .cadre p{
+    color: black;
+    text-align: center;
+}
+
+.contacts .cadre h3{
+    color: black;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Styles de inputs dans contacts */
+.nom input{
+    width: 520px;
+    height: 56px;
+    background: none;
+    border: 2px solid #021740;
+    border-radius: 38px;
+    padding-left: 5%;
+    margin: 10px 0;
+}
+
+.email input{
+    width: 520px;
+    height: 56px;
+    background: none;
+    border: 2px solid #021740;
+    border-radius: 38px;
+    padding-left: 5%;
+    margin: 10px 0;
+}
+
+.message input{
+    width: 520px;
+    height: 180px;
+    background: none;
+    border: 2px solid #021740;
+    border-radius: 38px;
+    padding-left: 5%;
+    margin: 10px 0;
+}
+
+/* Styles pour le bouton dans session contacts */
+.bouton  button{
+    width: 174px;
+    height: 54px;
+    background: #F2CEF2;
+    color: black;
+    border: none;
+    border-radius: 38px;
+    margin-top: 5px;
+}   
+
+.bouton button:hover{
+    filter: drop-shadow(0 0 20px   #021740) ;
+}
+/* Styles pour la partie footer */
+footer{
+    background-image: url('/Images/All pages/back_footer.png');
+}
+
+.footerprincipal{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 5% 0;
+}
+.footer1{
+    position: relative;
+}
+.footer1:hover{
+    transform: scale(1.1);
+    transition: .5s all ease-in-out;
+}
+
+.pages a{
+    text-decoration: none;
+}
+
+.img2{
+    position: absolute;
+    top: 45%;
+    left: 25%;
+
+}
+
+.footer2{
+    display: block;
+}
+.footer3{
+    display: flex;
+    column-gap: 27%;
+    width: auto;
+}
+.reseaufooter{
+    display: flex;
+    column-gap: 16%;
+}
+
+.copyright{
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+}
+.point{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #9E91B7;
+    margin: 0 5px;
+}
+
+/* Styles de boutons A propos et Wakanda */
+.pages button{
+    display: block;
+    background: none;
+    border: none;
+    height: 22px;
+}
+
+.pages button:hover{
+    text-decoration: underline white;
+}
+/* Fonts pour les textes */
+/* Installation des nouveaux fonts */
+@font-face {
+    font-family: 'Titre H1';
+    src: url('/Fonts/PantheraRegular-MVZ9J.ttf');
+}
+@font-face {
+    font-family: 'Titre H2';
+    src: url('/Fonts/BEYNO.ttf');
+}
+@font-face {
+    font-family: 'Titre H3';
+    src: url('/Fonts/WakandaForever-Regular.ttf');
+}
+@font-face {
+    font-family: 'Titre_citation_footer';
+    src: url('/Fonts/Cantarell-Regular.ttf');
+}
+
+/* Application des nouveaux fonts aux textes */
+h1{
+    font-family: 'Titre H1';
+    font-size: 68px;
+    color: #F2CEF2;
+}
+
+h2{
+    font-family: 'Titre H2';
+    font-size: 32px;
+    color: #9E91B7 ;
+}
+
+h3{
+    font-family: 'Titre_citation_footer';
+    font-size: 1.8em;
+}
+
+p{
+    font-family: 'Titre_citation_footer';
+    font-size: 1.3em;
+    text-align: justify;
+}

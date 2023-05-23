@@ -1,0 +1,288 @@
+/* Styles pour la page en égnéral */
+*{
+    list-style: none;
+    color: white;
+}
+
+/* Styles fade-in de tous les éléments de la page */
+*{
+    animation: slide-from-left 2s ease-in-out ;
+}
+@keyframes slide-from-left{
+    from{
+        transform: translateX(-50px);
+        opacity: 5%;
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+/* Arrière plan de la partie body */
+body{
+    background-image: url('/Images/All pages/arrière_plan.png');
+    background-size: 100%;
+}
+
+/* Styles de la partie navigation */
+/* Styles navigation en général */
+.navigation{
+    width: 100vw;
+    margin: 2%;
+    text-align: center;
+    display: flex;
+    column-gap: 55%;
+}
+/* Styles des logos (Sayna et Marvel) dans navigations */
+.logo{
+    display: flex;
+    column-gap: 3%;
+    align-items: center;
+    margin-left: 3%;
+}
+/* Styles des liens sous formes de texte dans navigations */
+nav ul{
+    display: flex;
+    column-gap: 25%;
+}
+nav ul a{
+    text-decoration: none;
+    font-family: 'Titre H2';
+    font-size: 32px;
+}
+
+nav ul a:hover{
+    text-decoration: underline;
+    color: #3D2DA6;
+}
+
+/* Styles de la partie introductive sur l'énigme */
+.introduction{
+    width: auto;
+    height: 1279px;
+    background-image: url('/Images/Enigme/Pantherenigme1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Styles du text dans partie introductive */
+.doramilaje{
+    width: 630px;
+    height: auto;
+    padding-top: 17%; 
+    padding-left:60% ;
+}
+
+.titre h2{
+    font-size: 4em;
+    font-weight: normal;
+    color: #9E91B7 ;
+}
+.paragraphe{
+    margin-top: 250px;
+    position: relative;
+}
+
+.paragraphe img{
+    position: absolute;
+    width: 1000px;
+    top: -100%;
+    left: -25%;
+}
+
+.trait img{
+    position: absolute;
+    bottom: -13%;
+}
+
+.text{
+    width: 630px;
+    height: max-content;
+}
+
+/* Styles de la session enigme */
+.blocenigme{
+    display: flex;
+    column-gap: 15%;
+    width: auto;
+    height: 900px;
+}
+
+.bloc1{
+  display: block;
+  column-gap: 50%;  
+  margin-left: 13%;  
+  width: 43%;
+}
+.bloc2{
+    width: 57%;
+}
+
+.bloc2 .savaistu{
+    width: 610px;
+    height: max-content;
+}
+
+.transcription span{
+    font-family: 'Titre H3';
+}
+.bloc1 .transcription{
+    margin-top: 90px;
+}
+
+.bloc1 .reponse{
+    margin-top: 200px;
+}
+
+.savaistu{
+    margin-top: 250px;
+    position: relative;
+}
+
+.savaistu img{
+    position: absolute;
+    width: 1000px;
+    top: -180%;
+    left: -30%;
+
+}
+/* Styles des inputs dans la section enigme */
+.input input{
+    width: 520px;
+    height: 56px;
+    background: none;
+    border: 2px solid #FFFFFF;
+    border-radius: 38px;
+    padding-left: 5%;
+    margin: 10px 0;
+}
+
+
+
+.reponse .bouton button{
+    width: 174px;
+    height: 54px;
+    background: #F2CEF2;
+    color: black;
+    border: none;
+    border-radius: 38px;
+    filter: drop-shadow( 0 0 10px #F2CEF2);
+    margin-top: 70px;
+    margin-left: 150px;
+}
+
+
+/* Styles pour la partie footer */
+footer{
+    background-image: url('/Images/All pages/back_footer.png');
+}
+
+.footerprincipal{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 5% 0;
+}
+.footer1{
+    position: relative;
+}
+
+.footer1:hover{
+    transform: scale(1.1);
+    transition: .5s all ease-in-out;
+}
+.img2{
+    position: absolute;
+    top: 45%;
+    left: 25%;
+
+}
+
+footer h3{
+    font-family: 'Titre_citation_footer';
+    font-size: 1.8em;    
+}
+
+.footer2{
+    display: block;
+}
+.footer3{
+    display: flex;
+    column-gap: 28%;
+    width: auto;
+}
+.reseaufooter{
+    display: flex;
+    column-gap: 16%;
+}
+
+.copyright{
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+}
+.point{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #9E91B7;
+    margin: 0 5px;
+}
+
+/* Styles de boutons A propos et Wakanda */
+.pages button{
+    display: block;
+    background: none;
+    border: none;
+    height: 22px;
+}
+
+.pages a{
+    text-decoration: none;
+}
+
+.pages button:hover{
+    text-decoration: underline white;
+}
+
+/* Fonts pour les textes */
+/* Installation des nouveaux fonts */
+@font-face {
+    font-family: 'Titre H1';
+    src: url('/Fonts/PantheraRegular-MVZ9J.ttf');
+}
+@font-face {
+    font-family: 'Titre H2';
+    src: url('/Fonts/BEYNO.ttf');
+}
+@font-face {
+    font-family: 'Titre H3';
+    src: url('/Fonts/WakandaForever-Regular.ttf');
+}
+@font-face {
+    font-family: 'Titre_citation_footer';
+    src: url('/Fonts/Cantarell-Regular.ttf');
+}
+
+/* Application des nouveaux fonts aux textes */
+h1{
+    font-family: 'Titre H1';
+    font-size: 68px;
+    color: #F2CEF2;
+}
+
+h2{
+    font-family: 'Titre H2';
+    font-size: 32px;
+    color: #F2CEF2;
+}
+h3{
+    font-family: 'Titre H3';
+    font-size: 43px;
+}
+
+
+p{
+    font-family: 'Titre_citation_footer';
+    font-size: 1.3em;
+    text-align: justify;
+}
